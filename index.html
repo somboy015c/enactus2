@@ -2,397 +2,1381 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Enactus Nigeria — Seeing Possibilities</title>
-<meta name="description" content="Enactus Nigeria empowers young leaders to drive social and economic change through innovative, entrepreneurial projects across 25 states.">
-<meta name="theme-color" content="#FBF6EA">
-<link rel="icon" href="img/core-img/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professor Ahmed Tijjani Mora: Pharmacist, Regulator, Academic</title>
+<meta name="description" content="The official portfolio of Professor Ahmed Tijjani Mora, OON, mni, Pro-Chancellor of Igbinedion University, Okada, and a pillar of pharmacy regulation in Nigeria.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%232e2013'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='23' font-weight='bold' fill='%23c9a35c' text-anchor='middle'%3EATM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream: #f4ecd9;
+    --cream-deep: #ebdfc0;
+    --paper: #fbf7ec;
+    --ink: #2c2013;
+    --brown: #4a3220;
+    --brown-deep: #2e2013;
+    --brown-warm: #8a5c33;
+    --gold: #ab7f34;
+    --gold-soft: #c9a35c;
+    --rule: rgba(74,50,32,0.18);
+    --max: 760px;
+    --wide: 1160px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Poppins', sans-serif;
+    font-weight:400;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; display:block; }
+
+  h1,h2,h3,h4{ margin:0; font-weight:600; color:var(--brown-deep); }
+
+  .display{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    letter-spacing:0.01em;
+  }
+
+  a{ color:inherit; }
+
+  .wrap{ max-width:var(--wide); margin:0 auto; padding:0 32px; }
+  .prose{ max-width:var(--max); margin:0 auto; padding:0 32px; }
+
+  section{ position:relative; }
+
+  /* ---------- pattern motifs, drawn from Zazzau court & agbada geometry ---------- */
+  .lattice{
+    background-image:
+      linear-gradient(135deg, transparent 47%, rgba(171,127,52,0.35) 47%, rgba(171,127,52,0.35) 48%, transparent 48%),
+      linear-gradient(-135deg, transparent 47%, rgba(171,127,52,0.35) 47%, rgba(171,127,52,0.35) 48%, transparent 48%);
+    background-size:46px 46px;
+    background-position:0 0, 0 0;
+  }
+
+  .rule{
+    width:64px; height:2px; background:var(--gold);
+    margin:22px auto;
+  }
+  .rule.left{ margin:22px 0; }
+
+  .kicker{
+    font-size:13px;
+    letter-spacing:0.06em;
+    color:var(--brown-warm);
+    font-weight:500;
+  }
+
+  /* ---------- nav ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(244,236,217,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--rule);
+  }
+  .nav-inner{
+    max-width:var(--wide); margin:0 auto; padding:14px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+    position:relative;
+  }
+  .nav-name{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600; font-size:19px; color:var(--brown-deep);
+    text-decoration:none; white-space:nowrap;
+  }
+  .nav-links{
+    display:flex; gap:26px; list-style:none; margin:0; padding:0;
+    font-size:14px; font-weight:500;
+  }
+  .nav-links a{ text-decoration:none; color:var(--brown); opacity:0.85; transition:opacity .2s; }
+  .nav-links a:hover{ opacity:1; color:var(--gold); }
+
+  .nav-toggle-label{ display:none; cursor:pointer; padding:6px; }
+  .nav-toggle-label span{
+    display:block; width:22px; height:2px; background:var(--brown-deep);
+    margin:5px 0; transition:transform .2s, opacity .2s;
+  }
+  #nav-toggle{ display:none; }
+
+  @media (max-width:820px){
+    .nav-toggle-label{ display:block; }
+    .nav-links{
+      position:absolute; top:100%; left:0; right:0;
+      flex-direction:column; gap:0;
+      background:var(--paper);
+      border-bottom:1px solid var(--rule);
+      max-height:0; overflow:hidden;
+      transition:max-height .28s ease;
+    }
+    .nav-links li{ border-top:1px solid var(--rule); }
+    .nav-links a{ display:block; padding:14px 32px; }
+    #nav-toggle:checked ~ .nav-links{ max-height:420px; }
+    #nav-toggle:checked ~ .nav-toggle-label span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+    #nav-toggle:checked ~ .nav-toggle-label span:nth-child(2){ opacity:0; }
+    #nav-toggle:checked ~ .nav-toggle-label span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    padding:76px 0 60px;
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:var(--wide); margin:0 auto; padding:0 32px;
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px;
+    align-items:center;
+  }
+  .hero-eyebrow{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:22px;
+    color:var(--brown-warm);
+    margin-bottom:6px;
+  }
+  .hero-name{
+    font-size:clamp(40px, 6vw, 66px);
+    line-height:1.03;
+    color:var(--brown-deep);
+  }
+  .hero-postnominals{
+    margin-top:16px;
+    font-size:15px;
+    letter-spacing:0.03em;
+    color:var(--brown);
+    font-weight:500;
+  }
+  .hero-titles{
+    margin-top:10px;
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:19px;
+    color:var(--gold);
+  }
+  .hero-role{
+    margin-top:26px;
+    font-size:17px;
+    color:var(--ink);
+    max-width:480px;
+    text-align:justify;
+  }
+  .hero-role strong{ color:var(--brown-deep); font-weight:600; }
+
+  .hero-portrait-wrap{
+    position:relative;
+    justify-self:center;
+  }
+  .hero-portrait{
+    width:100%;
+    max-width:340px;
+    border:10px solid var(--paper);
+    outline:1px solid var(--rule);
+    box-shadow:0 24px 50px -20px rgba(46,32,19,0.45);
+  }
+  .hero-portrait-frame{
+    position:absolute;
+    inset:-18px;
+    border:1px solid var(--gold-soft);
+    z-index:-1;
+  }
+
+  @media (max-width:900px){
+    .hero-inner{ grid-template-columns:1fr; text-align:center; }
+    .hero-role{ margin-left:auto; margin-right:auto; }
+    .hero-portrait-wrap{ order:-1; }
+  }
+
+  /* ---------- section headings ---------- */
+  .section-head{
+    text-align:center;
+    max-width:620px;
+    margin:0 auto 48px;
+  }
+  .section-head h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:clamp(30px, 4vw, 42px);
+  }
+  .section-head p{ color:var(--brown); margin-top:14px; font-size:16px; }
+
+  section.band{ padding:88px 0; }
+  section.band.alt{ background:var(--cream-deep); }
+  section.band.deep{
+    background:var(--brown-deep);
+    color:var(--cream);
+  }
+  section.band.deep h2, section.band.deep h3{ color:var(--paper); }
+  section.band.deep .kicker{ color:var(--gold-soft); }
+
+  /* ---------- about ---------- */
+  .about-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr;
+    gap:60px;
+    align-items:start;
+  }
+  .about-grid p{ margin:0 0 18px; font-size:16.5px; text-align:justify; }
+  .facts{
+    border-top:1px solid var(--rule);
+  }
+  .facts dl{ margin:0; }
+  .facts .row{
+    display:grid; grid-template-columns:120px 1fr;
+    gap:14px;
+    padding:14px 0;
+    border-bottom:1px solid var(--rule);
+    font-size:14.5px;
+  }
+  .facts dt{ color:var(--brown-warm); font-weight:500; }
+  .facts dd{ margin:0; color:var(--ink); }
+
+  @media (max-width:820px){
+    .about-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- timeline ---------- */
+  .timeline{
+    position:relative;
+    max-width:820px;
+    margin:0 auto;
+    padding-left:26px;
+  }
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:0; top:6px; bottom:6px;
+    width:1px;
+    background:var(--rule);
+  }
+  .t-item{
+    position:relative;
+    padding:0 0 44px 34px;
+  }
+  .t-item:last-child{ padding-bottom:0; }
+  .t-item::before{
+    content:"";
+    position:absolute;
+    left:-4.5px; top:5px;
+    width:9px; height:9px;
+    border-radius:50%;
+    background:var(--gold);
+  }
+  .t-year{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:22px;
+    color:var(--brown-warm);
+  }
+  .t-item h3{ font-size:18px; margin-top:4px; }
+  .t-item p{ margin:8px 0 0; font-size:15px; color:var(--ink); text-align:justify; }
+
+  /* ---------- leadership two-col list ---------- */
+  .lead-cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:52px;
+  }
+  .lead-cols h3{
+    font-size:15px;
+    text-transform:none;
+    color:var(--gold);
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:20px;
+    margin-bottom:18px;
+  }
+  .lead-cols ul{ list-style:none; margin:0; padding:0; }
+  .lead-cols li{
+    padding:13px 0;
+    border-bottom:1px solid var(--rule);
+    font-size:15px;
+  }
+  .lead-cols li .role{ color:var(--paper); font-weight:500; }
+  .lead-cols li .yrs{ color:var(--gold-soft); font-size:13px; display:block; margin-top:3px; }
+
+  @media (max-width:820px){
+    .lead-cols{ grid-template-columns:1fr; gap:8px; }
+  }
+
+  /* ---------- scholarship ---------- */
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:var(--rule);
+    border:1px solid var(--rule);
+    margin-bottom:56px;
+  }
+  .stat{
+    background:var(--paper);
+    padding:30px 20px;
+    text-align:center;
+  }
+  .stat b{
+    display:block;
+    font-family:'Cormorant Garamond', serif;
+    font-size:38px;
+    color:var(--brown-deep);
+    font-weight:600;
+  }
+  .stat span{ font-size:13px; color:var(--brown-warm); }
+
+  @media (max-width:700px){
+    .stat-row{ grid-template-columns:1fr 1fr; }
+  }
+
+  .book-feature{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:44px;
+    align-items:center;
+    padding:36px;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    margin-bottom:52px;
+  }
+  .book-feature img{ box-shadow:0 18px 34px -16px rgba(46,32,19,0.4); }
+  .book-feature h3{ font-family:'Cormorant Garamond', serif; font-size:26px; }
+  .book-feature p{ font-size:15px; margin:12px 0 0; text-align:justify; }
+  .book-feature .authors{ font-size:13px; color:var(--brown-warm); margin-top:12px; }
+
+  @media (max-width:700px){
+    .book-feature{ grid-template-columns:1fr; text-align:center; padding:26px 20px; }
+    .book-feature img{ justify-self:center; max-width:180px; margin:0 auto; }
+  }
+
+  @media (max-width:480px){
+    .wrap{ padding:0 20px; }
+    .prose{ padding:0 20px; }
+    .hero-role,
+    .about-grid p,
+    .t-item p,
+    .book-feature p,
+    .honour p,
+    .legacy p{
+      font-size:14.5px;
+    }
+    .honour{ padding:26px 20px; }
+  }
+
+  .booklist{
+    columns:2;
+    column-gap:48px;
+    font-size:14.5px;
+  }
+  .booklist li{ break-inside:avoid; margin-bottom:14px; padding-left:0; }
+  .booklist li em{ font-style:italic; color:var(--brown-deep); }
+  .booklist{ list-style:none; padding:0; margin:0; }
+  .booklist li::before{ content:"\00b7  "; color:var(--gold); font-weight:700; }
+
+  @media (max-width:700px){ .booklist{ columns:1; } }
+
+  /* ---------- honours ---------- */
+  .honour-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--rule);
+    border:1px solid var(--rule);
+  }
+  .honour{
+    background:var(--paper);
+    padding:34px 28px;
+  }
+  .honour h3{ font-family:'Cormorant Garamond', serif; font-size:21px; margin-bottom:8px; }
+  .honour p{ font-size:14px; margin:0; color:var(--ink); text-align:justify; }
+  .honour .tag{ font-size:12px; color:var(--gold); letter-spacing:0.03em; display:block; margin-bottom:8px; }
+
+  @media (max-width:900px){ .honour-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .honour-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- gallery ---------- */
+  .gallery{
+    columns:3 260px;
+    column-gap:14px;
+  }
+  .gallery figure{
+    margin:0 0 14px;
+    break-inside:avoid;
+    position:relative;
+  }
+  .gallery img{ width:100%; }
+  .gallery figcaption{
+    font-size:12.5px;
+    color:var(--brown-warm);
+    padding:8px 2px 0;
+  }
+
+  /* ---------- legacy quote ---------- */
+  .legacy{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:56px;
+    align-items:center;
+  }
+  .legacy img{ border:1px solid var(--rule); }
+  .legacy p{ text-align:justify; }
+  blockquote{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:24px;
+    line-height:1.5;
+    color:var(--brown-deep);
+    margin:0 0 16px;
+  }
+  @media (max-width:820px){ .legacy{ grid-template-columns:1fr; } }
+
+  /* ---------- press ---------- */
+  .press-list{ list-style:none; margin:0; padding:0; }
+  .press-list li{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:24px;
+    padding:20px 0;
+    border-bottom:1px solid var(--rule);
+    font-size:15px;
+  }
+  .press-list .src{ color:var(--brown-warm); font-size:13px; }
+  .press-list h4{ font-size:16px; font-weight:500; color:var(--brown-deep); margin:0 0 4px; }
+  .press-list h4 a{ text-decoration:none; color:inherit; border-bottom:1px solid var(--gold-soft); transition:color .2s, border-color .2s; }
+  .press-list h4 a:hover{ color:var(--gold); border-color:var(--gold); }
+  @media (max-width:600px){
+    .press-list li{ grid-template-columns:1fr; gap:4px; }
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--brown-deep);
+    color:var(--cream-deep);
+    padding:56px 0 30px;
+    text-align:center;
+  }
+  footer .display{ color:var(--paper); font-size:24px; margin-bottom:8px; }
+  footer .titles{ font-size:13px; color:var(--gold-soft); margin-bottom:28px; }
+  footer .fine{ font-size:12.5px; color:rgba(244,236,217,0.55); margin-top:26px; }
+
+  /* ---------- lectures / documents ---------- */
+  .doc-filters{
+    display:flex; flex-wrap:wrap; gap:10px;
+    justify-content:center;
+    margin-bottom:38px;
+  }
+  .doc-filter{
+    font-family:'Poppins',sans-serif;
+    font-size:13px; font-weight:500;
+    padding:8px 18px;
+    border:1px solid var(--rule);
+    background:transparent;
+    color:var(--brown);
+    cursor:pointer;
+    transition:background .2s, color .2s, border-color .2s;
+  }
+  .doc-filter:hover{ border-color:var(--gold); color:var(--gold); }
+  .doc-filter.is-active{
+    background:var(--brown-deep);
+    border-color:var(--brown-deep);
+    color:var(--cream);
+  }
+
+  .doc-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(268px,1fr));
+    gap:18px;
+  }
+  .doc-card{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    padding:22px 20px;
+    text-decoration:none;
+    color:inherit;
+    transition:transform .18s, box-shadow .18s, border-color .18s;
+  }
+  .doc-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 28px -14px rgba(46,32,19,0.35);
+    border-color:var(--gold-soft);
+  }
+  .doc-icon{ flex:0 0 auto; margin-top:2px; }
+  .doc-card h3{
+    font-size:14.5px;
+    font-weight:500;
+    line-height:1.45;
+    margin:0 0 7px;
+    color:var(--brown-deep);
+  }
+  .doc-meta{
+    font-size:12px;
+    color:var(--brown-warm);
+    letter-spacing:0.02em;
+  }
+  .doc-cat{
+    display:block;
+    font-size:11px;
+    color:var(--gold);
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+  .doc-note{
+    text-align:center;
+    font-size:13.5px;
+    color:var(--brown-warm);
+    margin:34px auto 0;
+    max-width:520px;
+  }
+  .doc-card.is-hidden{ display:none; }
+
+  @media (max-width:480px){
+    .doc-grid{ grid-template-columns:1fr; gap:14px; }
+    .doc-card{ padding:18px 16px; }
+  }
+
+  ::selection{ background:var(--gold-soft); color:var(--brown-deep); }
+
+  .hero-role,
+  .about-grid p,
+  .t-item p,
+  .book-feature p,
+  .honour p,
+  .legacy p{
+    text-align:justify;
+    text-justify:inter-word;
+    -webkit-hyphens:auto;
+    -ms-hyphens:auto;
+    hyphens:auto;
+  }
+</style>
 </head>
-<body id="top">
-<div id="preloader" aria-hidden="true">
-  <div class="wrapper">
-    <div class="cssload-loader">
-      <svg width="812" height="822" viewBox="0 0 812 822" fill="none" xmlns="http://www.w3.org/2000/svg" class="static">
-        <path d="M288.5 529.941L288.5 820L-2.43412e-05 529.941L288.5 529.941Z" fill="#EFC038"/>
-        <path d="M288.5 529.941L288.5 820L-2.43412e-05 529.941L288.5 529.941Z" fill="#EFC038"/>
-        <path d="M686.5 414.5L288.5 820L286.082 13L686.5 414.5Z" fill="#EFC038"/>
-        <path d="M686.5 414.5L288.5 820L286.082 13L686.5 414.5Z" fill="#EFC038"/>
-        <path d="M686 414L808 533.5L569.84 533.5L686 414Z" fill="#EFC038"/>
-        <path d="M288.5 820L255.28 530L287.5 530L288.5 820Z" fill="#B88A27"/>
-        <path d="M687 415.5L610 533.5L569.814 533.5L687 415.5Z" fill="#B88A27"/>
-      </svg>
-      <svg width="408" height="411" viewBox="0 0 408 411" fill="none" xmlns="http://www.w3.org/2000/svg" class="spin">
-        <path d="M25.5 110L33 97.5L42.0001 85L50.5 74.5L62.5001 61.5L74 73.5L64.5 83.5L56 94.5L48 105.5L40.5 118L25.5 110Z" fill="#55C22B"/>
-        <path d="M71.3292 52.4185L82.7992 43.4219L95.6703 34.9611L107.36 28.1897L124 20.5L129.667 35.6493L117.222 41.5965L105.354 48.8349L93.9523 56.2519L82.4823 65.2485L71.3292 52.4185Z" fill="#006699"/>
-        <path d="M136.5 17L150 12L164 8L177.5 6.5L197 5.5L197 20.4174L182.5 21L168.5 23L154.5 26.5L141.5 31L136.5 17Z" fill="#1B476C"/>
-        <path d="M209 5.5L223.569 6.28083L238.076 7.527L251.226 10.9314L269.804 16.9391L264.493 30.8791L251.226 26.5L238.076 23.5L222.613 21.4329L209 20.5L209 5.5Z" fill="#E71F39"/>
-        <path d="M281.822 22.3044L296.5 29.5L308.5 35.8736L321.204 44.5L334 54.5L324 66L312.5 56.5L301 48.5L288.5 41.5L277 35.8736L281.822 22.3044Z" fill="#DCA444"/>
-        <path d="M343 63.5L355.5 76.5L364 87.5L372.5 100L380.5 112.5L365.5 119.5L358.5 107.5L350.778 96.064L342 84.5L333.18 75.4306L343 63.5Z" fill="#4E9D3A"/>
-        <path d="M385.571 123.654L393 140L397 152.5L400.5 168L402.5 183L385.571 185L383.5 171L380.031 156.672L376.5 144.5L370.5 131L385.571 123.654Z" fill="#C5182C"/>
-        <path d="M403.964 195.5L403.964 213.258L403.172 226.358L400.828 242.075L399.164 249.537L397.5 257L380.761 252.524L383.894 238.723L385.843 224L386.242 210.5L386.242 196.729L403.964 195.5Z" fill="#FD3821"/>
-        <path d="M395.054 268.722L388.416 285.193L383 296.5L377 308.5L371.5 317.5L367 323.5L355 312.5L360.5 303.5L367.5 290.5L373.5 277L378.157 263.238L395.054 268.722Z" fill="#26BFD8"/>
-        <path d="M361.5 332.5L350 345.5L341 355L330.804 363.778L322.641 370.458L316.413 375L306.5 362.5L316.413 355L327.5 345.5L339 333.5L349 321.5L361.5 332.5Z" fill="#F6C608"/>
-        <path d="M304.5 381.5L292.5 388L279 394L267 399L256 402.533L247.5 404L245 390L254 387.5L268 383L282.5 376.5L296.623 368.836L304.5 381.5Z" fill="#9A1E40"/>
-        <path d="M234.889 406.949L220.889 408.449L203.5 409.187L191.5 409.187L180.5 408.449L173.5 408L174.5 393.5L184.5 394.312L199.5 395L217.5 394.312L233.5 392.5L234.889 406.949Z" fill="#FF6727"/>
-        <path d="M91.5 375.5L81 367.5L68.5 357.5L59 348.5L51.4419 340.155L46.5 334.5L58.5 325L65 332.5L75 343.5L86 353L99 363L91.5 375.5Z" fill="#F69612"/>
-        <path d="M38.5 324L29.5 311.5L22.5 298.5L16.5 286L12.5 275.5L10.454 268.267L27.1351 263.5L30 274L36.5 289L43 302.5L51 314.5L38.5 324Z" fill="#C08B2F"/>
-        <path d="M6.5 257L3.93153 242.239L2.14598 227.583L1.10975 213.756L1.20788 202.521L1.10975 195L19.2079 196.674L19.2079 207.5L19.5 224L21 238.5L24 252.5L6.5 257Z" fill="#3D7E46"/>
-        <path d="M2.70971 181.814L4.93865 166.999L8 153.5L12 140.5L16.5 129.5L20 122L35 129.5L31 139.084L25.4742 154.615L22.314 168.846L20.7349 183.077L2.70971 181.814Z" fill="#0997D9"/>
-        <path d="M161.5 404L155 403.5L148.5 401.5L143.5 400.5L138 399L127.5 395L117.815 390.323L107.849 385.608L102.5 382L110.5 369.5L117 373.5L130.455 380.051L147.456 386.003L162.216 390.323L161.5 404Z" fill="#DA1369"/>
-      </svg>
-    </div>
-  </div>
-</div>
+<body>
 
-<a class="skip" href="#main">Skip to content</a>
-
-<!-- ============ NAV ============ -->
-<header class="nav" id="navbar">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html" aria-label="Enactus Nigeria, home"><img src="img/core-img/blogo.png" alt="Enactus Nigeria"></a>
-    <div class="nav-menu" id="nav-menu">
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <div class="has-dropdown">
-          <a href="#">About us <span class="caret" aria-hidden="true"></span></a>
-          <div class="nav-dropdown">
-            <a href="about.html">Who we are</a>
-            <a href="partners.html">Our partners</a>
-            <a href="teams.html">Our teams</a>
-            <a href="alumni.html">Our alumni</a>
-          </div>
-        </div>
-        <a href="nationals.html">National competition</a>
-        <div class="has-dropdown">
-          <a href="#">News &amp; more <span class="caret" aria-hidden="true"></span></a>
-          <div class="nav-dropdown">
-            <a href="programs.html">Events &amp; programs</a>
-            <a href="blog.html">Blog</a>
-            <a href="gallery.html">Gallery</a>
-          </div>
-        </div>
-      </nav>
-      <div class="nav-actions">
-        <a class="btn btn-primary btn-sm" href="contact.html">Contact us</a>
-      </div>
-    </div>
-    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-      <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">A. T. Mora</a>
+    <input type="checkbox" id="nav-toggle">
+    <label class="nav-toggle-label" for="nav-toggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#scholarship">Scholarship</a></li>
+      <li><a href="#lectures">Lectures</a></li>
+      <li><a href="#honours">Honours</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#legacy">Legacy</a></li>
+      <li><a href="#press">Press</a></li>
+    </ul>
   </div>
 </header>
 
-<main id="main">
+<main id="top">
 
-  <!-- ============ NATIONALS COUNTDOWN BANNER ============ -->
-  <section id="nationals-banner" class="nationals-banner">
-    <div class="container">
-      <div class="nationals-inner">
-        <div class="nationals-stub">
-          <span class="nationals-tag">Nationwide showdown</span>
-          <h2>The countdown<br>is on</h2>
-          <p>Nigeria's brightest student changemakers go head-to-head for a place on the world stage.</p>
-          <div class="nationals-countdown" id="nationals-countdown">
-            <div class="cd-block"><span id="cd-days">00</span><small>Days</small></div>
-            <div class="cd-block"><span id="cd-hours">00</span><small>Hrs</small></div>
-            <div class="cd-block"><span id="cd-mins">00</span><small>Mins</small></div>
-            <div class="cd-block"><span id="cd-secs">00</span><small>Secs</small></div>
-          </div>
-          <a class="btn btn-primary" href="nationals.html">See you at Nationals <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        </div>
-        <img src="img/blog_images/nationals.jpg" alt="Enactus Nigeria National Competition flyer">
+  <!-- ================= HERO ================= -->
+  <section class="hero lattice">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">Professor</div>
+        <h1 class="hero-name display">Ahmed Tijjani<br>Mora</h1>
+        <div class="hero-postnominals">OON &nbsp;·&nbsp; mni &nbsp;·&nbsp; FPSN &nbsp;·&nbsp; FPCPharm &nbsp;·&nbsp; FICEN &nbsp;·&nbsp; FIHMN &nbsp;·&nbsp; FNIM</div>
+        <div class="hero-titles">K'ayayen Sarkin Musulmi &nbsp;·&nbsp; Wakilin Maganin Zazzau &nbsp;·&nbsp; Iyan Piriga</div>
+        <p class="hero-role">
+          <strong>Pro-Chancellor and Chairman, Governing Council</strong> of Igbinedion University, Okada.
+          A pharmacist, regulator, and administrator whose career of five decades has shaped
+          pharmacy practice, education, and public service across Nigeria.
+        </p>
+      </div>
+      <div class="hero-portrait-wrap">
+        <div class="hero-portrait-frame"></div>
+        <img class="hero-portrait" src="assets/hero-profile.jpg" alt="Portrait of Professor Ahmed Tijjani Mora">
       </div>
     </div>
   </section>
 
-  <!-- ============ HERO ============ -->
-  <section id="welcome-slide-section" class="hero" aria-labelledby="hero-title">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="tag">Lead change · Inspire progress</span>
-        <h1 id="hero-title">Empowering the next generation of leaders</h1>
-        <p class="lead">Across 25 states, young Nigerians are turning bold ideas into ventures that lift their communities — this is where that work begins.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="nationals.html">See our story <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-          <a class="btn btn-ghost" href="#impact">Our impact</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="hero-frame">
-          <img class="hero-photo" src="img/bg-img/0S2A8808.jpg" alt="Enactus Nigeria students">
-        </div>
-        <span class="hero-blob" aria-hidden="true"></span>
-        <span class="hero-ring" aria-hidden="true"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ IMPACT STATS ============ -->
-  <section class="impact-band" id="impact" aria-label="Our impact in numbers">
-    <div class="container">
-      <div class="impact-head">
-        <span class="tag">By the numbers</span>
-        <h2>One movement, felt nationwide</h2>
-      </div>
-      <div class="impact-band-grid">
-        <div class="sband c1"><img class="sband-icon" src="img/states.png" alt=""><div class="sband-text"><strong>25</strong><span>States</span></div></div>
-        <div class="sband c2"><img class="sband-icon" src="img/institutions.png" alt=""><div class="sband-text"><strong>62</strong><span>Institutions</span></div></div>
-        <div class="sband c3"><img class="sband-icon" src="img/students.png" alt=""><div class="sband-text"><strong>1.5K+</strong><span>Active students</span></div></div>
-        <div class="sband c4"><img class="sband-icon" src="img/team.png" alt=""><div class="sband-text"><strong>62</strong><span>Teams</span></div></div>
-        <div class="sband c5"><img class="sband-icon" src="img/alumni.png" alt=""><div class="sband-text"><strong>20K+</strong><span>Alumni</span></div></div>
-        <div class="sband c6"><img class="sband-icon" src="img/impacts.png" alt=""><div class="sband-text"><strong>15M+</strong><span>People impacted</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ VIDEO + IMPACT STORY ============ -->
-  <section class="story-band" aria-labelledby="story-title">
-    <div class="container story-grid">
-      <div class="story-copy">
-        <span class="tag">Our impact story</span>
-        <h2 id="story-title">22 states.<br>One shared mission.</h2>
-        <p class="lead">Enactus Nigeria empowers young leaders to drive social and economic change through innovative projects. With a presence in over 60 institutions across 22 states, we foster entrepreneurial skills and sustainable solutions to the challenges our communities face most.</p>
-        <a class="link" href="about.html">More about us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-      </div>
-      <div class="story-media">
-        <div class="video-gallery-player" id="video-gallery-player"></div>
-        <div class="video-gallery-tabs" id="video-gallery-tabs">
-          <button type="button" class="video-tab-btn active" data-category="all">All videos</button>
-          <button type="button" class="video-tab-btn" data-category="special">Special projects</button>
-        </div>
-        <div class="slider">
-          <div class="video-gallery-thumbs slider-track" id="video-gallery-thumbs"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROGRAMS ============ -->
-  <section class="section" aria-labelledby="projects-title" id="projects">
-    <div class="container">
+  <!-- ================= ABOUT ================= -->
+  <section class="band" id="about">
+    <div class="wrap">
       <div class="section-head">
-        <div>
-          <span class="tag">Our programs</span>
-          <h2 id="projects-title">Where ideas turn into ventures</h2>
-        </div>
-        <a class="link" href="programs.html">View all <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <div class="kicker">About</div>
+        <h2>A career built across every room in the profession</h2>
       </div>
-      <div class="slider">
-        <button type="button" class="slider-arrow prev" data-slider-prev aria-label="Previous programs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
-        <div class="program-grid slider-track">
-        <a class="program-card" href="blogpost.html">
-          <div class="thumb"><img src="img/programs/neo.jpeg" alt="Nigerian Engineering Olympiad"><span class="pchip ongoing">Ongoing</span></div>
-          <div class="body">
-            <h3>Nigerian Engineering Olympiad</h3>
-            <p>A prestigious competition identifying, nurturing, and celebrating engineering talent across disciplines.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
-        <a class="program-card" href="blogpost.html">
-          <div class="thumb"><img src="img/programs/jb.jpeg" alt="Julius Berger Innovation Challenge"><span class="pchip ongoing">Ongoing</span></div>
-          <div class="body">
-            <h3>Julius Berger Innovation Challenge</h3>
-            <p>Julius Berger Nigeria and Enactus Nigeria partner to find student-led solutions for the built environment.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
-        <a class="program-card" href="blogpost.html">
-          <div class="thumb"><img src="img/blog_images/nationals.jpg" alt="Enactus Nigeria National Competition 2026"><span class="pchip upcoming">Upcoming</span></div>
-          <div class="body">
-            <h3>The Enactus Nigeria National Competition 2026</h3>
-            <p>25 dynamic teams. Two tracks. Over 36 social innovations on display. One stage. Watch history unfold.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
-        <a class="program-card" href="#">
-          <div class="thumb"><img src="img/programs/schneider_electric_challenge.png" alt="Schneider Electric Challenge"><span class="pchip concluded">Concluded</span></div>
-          <div class="body">
-            <h3>Schneider Electric Challenge</h3>
-            <p>Discovering, developing and deploying efficient, innovative battery solutions with a focus on social impact.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
-        <a class="program-card" href="#">
-          <div class="thumb"><img src="img/programs/act_foundation_challenge.png" alt="Act Foundation Challenge"><span class="pchip ongoing">Ongoing</span></div>
-          <div class="body">
-            <h3>Act Foundation Challenge</h3>
-            <p>A partnership with the ACT Foundation through the Leadership Challenge Cycle 7, designed by Enactus Nigeria.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
-        <a class="program-card" href="#">
-          <div class="thumb"><img src="img/programs/ethical_living.jpg" alt="Ethical Living Project"><span class="pchip ongoing">Ongoing</span></div>
-          <div class="body">
-            <h3>Ethical Living Project</h3>
-            <p>An African Capital Alliance Foundation initiative fostering ethical awareness among young adults.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
+      <div class="about-grid">
+        <div>
+          <p>
+            Professor Ahmed Tijjani Mora was born on 13 May 1956 in the historic city of Zaria,
+            Kaduna State, into the family of the late Dr. Abdurrahman Mora, a pioneering
+            Northern Nigerian educationist and diplomat. He was raised on Mora Road in the
+            Tudun Wada quarter of Zaria, a neighbourhood that has produced generations of
+            Nigeria's civil servants, professors, and public office holders.
+          </p>
+          <p>
+            He trained as a pharmacist at Ahmadu Bello University, and over the decades that
+            followed he practised in every one of the profession's four core areas: hospital,
+            community, industrial, and academic pharmacy, before rising to lead the
+            Pharmacists Council of Nigeria as its Registrar and Chief Executive Officer, and
+            later as Chairman of its Governing Council.
+          </p>
+          <p>
+            He is currently Pro-Chancellor and Chairman of the Governing Council of Igbinedion
+            University, Okada, where he also serves as Professor of Clinical Pharmacy and
+            Pharmacy Practice, the university's first professor in that discipline.
+          </p>
         </div>
-        <button type="button" class="slider-arrow next" data-slider-next aria-label="Next programs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+        <div class="facts">
+          <dl>
+            <div class="row"><dt>Born</dt><dd>13 May 1956, Zaria, Kaduna State</dd></div>
+            <div class="row"><dt>Education</dt><dd>B.Sc. Pharmacy, MBA, Ph.D., Ahmadu Bello University &amp; Usmanu Danfodiyo University</dd></div>
+            <div class="row"><dt>Current role</dt><dd>Pro-Chancellor &amp; Chairman of Council, Igbinedion University, Okada</dd></div>
+            <div class="row"><dt>Regulatory career</dt><dd>Registrar &amp; CEO, then Chairman of Council, Pharmacists Council of Nigeria</dd></div>
+            <div class="row"><dt>National honour</dt><dd>Officer of the Order of the Niger (OON), 2023</dd></div>
+            <div class="row"><dt>Languages</dt><dd>English, Hausa, Arabic (written)</dd></div>
+          </dl>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ NEWS ============ -->
-  <section class="section bg-mist" id="stories" aria-labelledby="news-title">
-    <div class="container">
+  <!-- ================= JOURNEY / TIMELINE ================= -->
+  <section class="band alt" id="journey">
+    <div class="wrap">
       <div class="section-head">
+        <div class="kicker">Journey</div>
+        <h2>Five decades in pharmacy, regulation, and public life</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="t-item">
+          <div class="t-year display">1978</div>
+          <h3>Graduates in Pharmacy</h3>
+          <p>Earns his B.Sc. in Pharmacy from Ahmadu Bello University, Zaria, and interns at
+             ABU Teaching Hospital, Kaduna, the start of a career that would return to ABU
+             again and again, as lecturer, alumnus, and eventual Alumni Association president.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">1986 – 1993</div>
+          <h3>Building Kaduna State's pharmaceutical services</h3>
+          <p>Serves as the first Pharmaceutical Divisional Manager of the Kaduna State
+             Distribution Agency, then Chief Pharmacist of the Health Management Board, and
+             later Director of Pharmaceutical Services at the State Ministry of Health.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">1997 – 2003</div>
+          <h3>Leading pharmaceutical manufacturing</h3>
+          <p>Managing Director and CEO of Zaria Pharmaceutical Company Ltd, makers of the
+             ZARINJECT brand of disposable syringes and needles, then the largest such plant
+             in West Africa, followed by the same role at Zazzau Pharmaceutical Industries Ltd.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">2003 – 2012</div>
+          <h3>Registrar &amp; CEO, Pharmacists Council of Nigeria</h3>
+          <p>Leads the national regulator for pharmacy through a period of extensive reform:
+             restructuring the Registry, launching Nigeria's Mandatory Continuing Professional
+             Development programme, and strengthening inspection and monitoring standards
+             nationwide.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">2012 – 2016</div>
+          <h3>Foundation Dean, Kaduna State University</h3>
+          <p>Becomes the pioneer Dean of the Faculty of Pharmaceutical Sciences and founding
+             Head of the Department of Clinical Pharmacy and Pharmacy Management at KASU.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">2015 – 2021</div>
+          <h3>President Worldwide, ABU Alumni Association</h3>
+          <p>Leads the global alumni body of his alma mater, following years as Deputy
+             National President, mobilising alumni resources for infrastructure, hostels,
+             and student support back at Ahmadu Bello University.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">2020 – 2023</div>
+          <h3>Chairman, Governing Council, PCN</h3>
+          <p>Returns to the Pharmacists Council of Nigeria, the institution he once managed
+             day to day, this time at the helm of its governing board.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">2023</div>
+          <h3>Officer of the Order of the Niger</h3>
+          <p>Conferred by the President and Commander-in-Chief of the Armed Forces of the
+             Federal Republic of Nigeria, in recognition of decades of national service.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">2025 – Date</div>
+          <h3>Pro-Chancellor, Igbinedion University, Okada</h3>
+          <p>Appointed Pro-Chancellor and Chairman of the Governing Council, continuing a
+             second career in university governance alongside his professorship in Clinical
+             Pharmacy and Pharmacy Practice.</p>
+        </div>
+
+        <div class="t-item">
+          <div class="t-year display">2026</div>
+          <h3>A Pillar of Pharmacy Regulation in Nigeria</h3>
+          <p>On his 70th birthday, a biography documenting his life and career, with a
+             foreword by His Eminence the Sultan of Sokoto, is publicly presented in Kaduna.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEADERSHIP ================= -->
+  <section class="band deep lattice" id="leadership">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Leadership &amp; Service</div>
+        <h2>Institutions he has led, guided, or helped rebuild</h2>
+      </div>
+      <div class="lead-cols">
         <div>
-          <span class="tag">Latest news</span>
-          <h2 id="news-title">Fresh off the campus circuit</h2>
+          <h3 class="display">Regulatory &amp; academic</h3>
+          <ul>
+            <li><span class="role">Pro-Chancellor &amp; Chairman, Governing Council, Igbinedion University, Okada</span><span class="yrs">2025 – date</span></li>
+            <li><span class="role">Chairman, Governing Council, Pharmacists Council of Nigeria</span><span class="yrs">2020 – 2023</span></li>
+            <li><span class="role">Registrar &amp; CEO, Pharmacists Council of Nigeria</span><span class="yrs">2003 – 2012</span></li>
+            <li><span class="role">Foundation Dean, Faculty of Pharmaceutical Sciences, Kaduna State University</span><span class="yrs">2012 – 2016</span></li>
+            <li><span class="role">Chairman, Committee of Registrars of Health Professions</span></li>
+            <li><span class="role">First &amp; Interim Chairman, West African Pharmaceutical Manufacturers Association</span></li>
+          </ul>
         </div>
-        <a class="link" href="blog.html">Load more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-      </div>
-      <div class="news-grid">
-        <a class="news-card" href="blogpost.html?id=abu_wins">
-          <div class="news-tile"><img src="img/blog_images/abu_wins.jpg" alt="Ahmadu Bello University wins 2026"><span class="chip">Champions</span></div>
-          <div class="news-body">
-            <span class="date">24 August, 2026</span>
-            <h3>Ahmadu Bello University wins the 2026 Enactus Nigeria National Competition</h3>
-            <p>ABU emerges as winner of the Advanced Stage Competition, earning the right to represent Nigeria at the Enactus World Cup.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
-        <a class="news-card" href="blogpost.html?id=futo_wins">
-          <div class="news-tile"><img src="img/blog_images/futo_wins.jpg" alt="FUTO wins Early Stage Competition"><span class="chip">Early stage</span></div>
-          <div class="news-body">
-            <span class="date">23 August, 2026</span>
-            <h3>FUTO wins the Early Stage Competition</h3>
-            <p>Federal University of Technology Owerri is the inaugural winner of the Enactus Nigeria Early Stage Competition 2026.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
-        <a class="news-card" href="blogpost.html?id=reimagining">
-          <div class="news-tile"><img src="img/blog_images/reimagining.jpg" alt="Reimagining Transformation"><span class="chip">Feature</span></div>
-          <div class="news-body">
-            <span class="date">23 August, 2026</span>
-            <h3>Reimagining Transformation</h3>
-            <p>How Nigerian students are taking ideas from campus to the world — a look at the 2026 National Competition.</p>
-            <span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-          </div>
-        </a>
+        <div>
+          <h3 class="display">Alumni &amp; professional bodies</h3>
+          <ul>
+            <li><span class="role">President Worldwide, Ahmadu Bello University Alumni Association</span><span class="yrs">2015 – 2021</span></li>
+            <li><span class="role">Chairman, Board of Trustees, ABU Pharmacy Alumni Association</span><span class="yrs">2010 – date</span></li>
+            <li><span class="role">National Chairman, Conference of Alumni Associations of Nigerian Universities</span><span class="yrs">2016 – 2022</span></li>
+            <li><span class="role">National Chairman, Barewa Old Boys Association, 1970 intake</span></li>
+            <li><span class="role">Chairman, Pharmaceutical Society of Nigeria, Kaduna State Branch</span></li>
+            <li><span class="role">Life Patron, PANS, ABU Zaria &amp; KASU chapters</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ PARTNERS ============ -->
-  <section class="partners">
-    <div class="container">
-      <div class="partners-lead">
-        <span class="tag">Our partners</span>
-        <h2>We believe in the power of collaboration to drive sustainable impact.</h2>
+  <!-- ================= SCHOLARSHIP ================= -->
+  <section class="band" id="scholarship">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Scholarship &amp; Publications</div>
+        <h2>A body of work built one lecture hall at a time</h2>
       </div>
-      <div class="slider partners-slider">
-        <button type="button" class="slider-arrow prev" data-slider-prev aria-label="Previous partners"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
-        <div class="partners-logos slider-track">
-        <div class="plogo"><img src="img/sponsors/SchneiderElectric.png" alt="Schneider Electric"></div>
-        <div class="plogo"><img src="img/sponsors/NNPCChevron.png" alt="NNPC Chevron"></div>
-        <div class="plogo"><img src="img/sponsors/AwA.png" alt="Action with Africa"></div>
-        <div class="plogo"><img src="img/sponsors/GTBank.png" alt="GTBank"></div>
-        <div class="plogo"><img src="img/sponsors/Unilever.png" alt="Unilever"></div>
-        <div class="plogo"><img src="img/sponsors/sovereign.png" alt="Sovereign Trust Bank"></div>
-        <div class="plogo"><img src="img/sponsors/FCMB.png" alt="FCMB"></div>
-        <div class="plogo"><img src="img/sponsors/Interswitch.png" alt="Interswitch"></div>
-        <div class="plogo"><img src="img/sponsors/verve.png" alt="Verve"></div>
-        <div class="plogo"><img src="img/sponsors/FIRST.png" alt="First E & P"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor1.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor2.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor3.png" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor4.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor5.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor6.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor7.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor8.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor9.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor10.png" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor11.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor12.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor13.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor14.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor15.jpg" alt="Partner"></div>
-        <div class="plogo"><img src="img/sponsors/sponsor16.jpg" alt="Partner"></div>
+
+      <div class="stat-row">
+        <div class="stat"><b>18+</b><span>Books authored or co-authored</span></div>
+        <div class="stat"><b>27</b><span>Pamphlets &amp; books edited</span></div>
+        <div class="stat"><b>400+</b><span>Conferences &amp; workshops, 1988–2025</span></div>
+        <div class="stat"><b>25</b><span>Peer-reviewed papers published</span></div>
+      </div>
+
+      <div class="book-feature">
+        <img src="assets/book-cover.jpg" alt="Cover of the biography, A Pillar of Pharmacy Regulation in Nigeria">
+        <div>
+          <span class="kicker">Featured biography · First Edition, 2026</span>
+          <h3>A Pillar of Pharmacy Regulation in Nigeria</h3>
+          <p>
+            Commissioned by generations of his students to mark his 70th birthday, this
+            biography traces his life from Tudun Wada, Zaria, through four decades of
+            pharmacy practice, regulation, and university leadership. It carries a foreword
+            by His Eminence Alhaji Muhammad Sa'ad Abubakar, CFR, the 20th Sultan of Sokoto,
+            and was publicly presented in Kaduna on 13 May 2026.
+          </p>
+          <div class="authors">Authors: Aliyu Jibrin, Ibrahim Yakasai, Umar Pateh, Ahmed Ibrahim, Ibrahim Amidu, Kabiru Gulma</div>
         </div>
-        <button type="button" class="slider-arrow next" data-slider-next aria-label="Next partners"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+
+      <ul class="booklist">
+        <li><em>The Lizard Shape Model in Drug Distribution in Nigeria</em>, Author, 2014 &amp; 2018</li>
+        <li><em>The Contributions of Students and Alumni Associations Towards Promoting Pharmacy Education and Practice in Nigeria</em>, Author, 2014</li>
+        <li><em>Towards Achieving Our Dream for ABU</em>, Editor, 2017</li>
+        <li><em>A Compendium of Distinguished ABU Alumni</em>, Vol. 2, Editor &amp; Foreword, 2019</li>
+        <li><em>Excellence in Pharmacy Practice Management: The Fred Adenika Legacy</em>, Co-author, 2009</li>
+        <li><em>Education for a Better Tomorrow</em>, ZEDA Annual Lecture Compilation, Editor, 1993–2022</li>
+        <li><em>The Barewa Lecture Series</em>, Vol. II, Author, 2020</li>
+        <li><em>Compendium of Minimum Standards of Pharmacy Practice in Nigeria</em>, Editor, 2023</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= HONOURS ================= -->
+  <section class="band alt" id="honours">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Honours &amp; Titles</div>
+        <h2>Recognition, national and traditional</h2>
+      </div>
+      <div class="honour-grid">
+        <div class="honour">
+          <span class="tag">National Honour</span>
+          <h3>Officer of the Order of the Niger</h3>
+          <p>Conferred by the President and Commander-in-Chief of the Armed Forces of the
+             Federal Republic of Nigeria, May 2023.</p>
+        </div>
+        <div class="honour">
+          <span class="tag">Traditional Title</span>
+          <h3>Wakilin Maganin Zazzau</h3>
+          <p>Turbanned by His Highness Alhaji Shehu Idris, CFR, Emir of Zazzau, on 27
+             September 2013.</p>
+        </div>
+        <div class="honour">
+          <span class="tag">Traditional Title</span>
+          <h3>K'ayayen Sarkin Musulmi</h3>
+          <p>Conferred by the Sultanate Council of Sokoto, recognising his service to the
+             Muslim community.</p>
+        </div>
+        <div class="honour">
+          <span class="tag">Traditional Title</span>
+          <h3>Iyan Piriga</h3>
+          <p>Held of the Piriga Kingdom, Lere Local Government Area, Kaduna State.</p>
+        </div>
+        <div class="honour">
+          <span class="tag">Professional Fellowships</span>
+          <h3>FPSN · FPCPharm · FICEN · FIHMN · FNIM</h3>
+          <p>Fellowships of the Pharmaceutical Society of Nigeria, the West African
+             Postgraduate College of Pharmacists, and allied professional institutes.</p>
+        </div>
+        <div class="honour">
+          <span class="tag">Alumni Recognition</span>
+          <h3>Distinguished Alumni Service Award</h3>
+          <p>Conferred by the Ahmadu Bello University Alumni Association, Abuja, November
+             2024.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ NEWSLETTER / CTA ============ -->
-  <section class="cta" id="take-action" aria-labelledby="cta-title">
-    <div class="container cta-inner">
-      <div class="cta-copy">
-        <span class="tag">Stay in the loop</span>
-        <h2 id="cta-title">Subscribe to our newsletter</h2>
-        <p class="lead">Get firsthand information about our upcoming programs and events, straight to your inbox.</p>
+  <!-- ================= LECTURES & PAPERS ================= -->
+  <section class="band alt" id="lectures">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Lectures &amp; Papers</div>
+        <h2>The written and spoken record</h2>
+        <p>A working archive of lectures, regulatory papers, addresses, manuscripts and bibliographies spanning 1988 to 2025. Select any document to open it.</p>
       </div>
-      <form class="nl-form" action="#" method="post">
-        <input type="email" name="nl-email" placeholder="Your email address" required>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
+
+      <div class="doc-filters">
+        <button class="doc-filter is-active" data-cat="all" type="button">All documents</button>
+        <button class="doc-filter" data-cat="Lectures & Addresses" type="button">Lectures &amp; Addresses</button>
+        <button class="doc-filter" data-cat="Regulation & Policy" type="button">Regulation &amp; Policy</button>
+        <button class="doc-filter" data-cat="Remarks & Proceedings" type="button">Remarks &amp; Proceedings</button>
+        <button class="doc-filter" data-cat="Books & Manuscripts" type="button">Books &amp; Manuscripts</button>
+        <button class="doc-filter" data-cat="Bibliography" type="button">Bibliography</button>
+        <button class="doc-filter" data-cat="Biography & Profile" type="button">Biography &amp; Profile</button>
+      </div>
+
+      <div class="doc-grid">
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/lecture-policy-reforms-regulatory-challenges.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>Policy Reforms and Regulatory Challenges in Nigeria's Pharmaceutical Sector</h3>
+            <span class="doc-meta">PDF &middot; 6 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/challenges-of-health-regulation-nigeria.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>The Challenges of Health Regulation in Nigeria</h3>
+            <span class="doc-meta">PDF &middot; 11 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/challenges-of-health-regulation-nigeria-ii.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>The Challenges of Health Regulation in Nigeria (II)</h3>
+            <span class="doc-meta">PDF &middot; 15 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/health-regulatory-agencies-professional-harmony.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>Health Regulatory Agencies as Instruments for Professional Harmony</h3>
+            <span class="doc-meta">PDF &middot; 7 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/role-of-health-regulatory-agencies.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>The Role of Health Regulatory Agencies in Nigeria</h3>
+            <span class="doc-meta">PDF &middot; 51 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/the-nigerian-pharmacist.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>The Nigerian Pharmacist</h3>
+            <span class="doc-meta">PDF &middot; 10 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/regulatory-challenges-pharmacy-practice-nigeria.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>Regulatory Challenges Facing Pharmacy Practice in Nigeria</h3>
+            <span class="doc-meta">PDF &middot; 13 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Lectures & Addresses" href="documents/text-of-address-pharmacy-forum.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Lectures &amp; Addresses</span>
+            <h3>Text of Address to the Pharmacy Forum</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/overview-regulatory-functions-pcn.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>An Overview of the Regulatory Functions of the PCN</h3>
+            <span class="doc-meta">PDF &middot; 12 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/implementation-regulatory-functions-pcn.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>The Implementation of the Regulatory Functions of the PCN</h3>
+            <span class="doc-meta">PDF &middot; 8 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/implementation-regulatory-control-functions-slides.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>The Implementation of Regulatory Control Functions (Slides)</h3>
+            <span class="doc-meta">PDF &middot; 26 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/effective-implementation-consultant-pharmacy-slides.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>Effective Implementation of the Consultant Pharmacy Cadre (Slides)</h3>
+            <span class="doc-meta">PDF &middot; 44 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/ensuring-access-to-registered-products.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>Ensuring Access to Registered Pharmaceutical Products in Licensed Premises</h3>
+            <span class="doc-meta">PDF &middot; 9 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/code-of-ethics-pharmaceutical-inspectors.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>Code of Ethics for Pharmaceutical Inspectors</h3>
+            <span class="doc-meta">PDF &middot; 5 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/pharmacists-council-of-nigeria-overview.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>The Pharmacists Council of Nigeria: An Overview</h3>
+            <span class="doc-meta">PDF &middot; 9 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/presentation-by-the-registrar-pcn.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>Presentation by the Registrar, Pharmacists Council of Nigeria</h3>
+            <span class="doc-meta">PDF &middot; 38 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/appendix-pcn-regulatory-documents.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>Appendix: PCN Regulatory Documents</h3>
+            <span class="doc-meta">PDF &middot; 9 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Regulation & Policy" href="documents/workshop-to-finalise-curriculum.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Regulation &amp; Policy</span>
+            <h3>Workshop to Finalise the Pharmacy Curriculum</h3>
+            <span class="doc-meta">PDF &middot; 5 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/abupaa-nec-inauguration-remarks.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>Remarks at the Inauguration of the ABUPAA National Executive Committee</h3>
+            <span class="doc-meta">PDF &middot; 5 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/remarks-chairman-committee-registrars-health-professions.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>Remarks by the Chairman, Committee of Registrars of Health Professions</h3>
+            <span class="doc-meta">PDF &middot; 10 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/opening-remarks-maiden-joint-meeting.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>Opening Remarks at the Maiden Joint Meeting</h3>
+            <span class="doc-meta">PDF &middot; 4 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/opening-remarks-by-the-chairman.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>Opening Remarks by the Chairman</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/remarks-by-the-chairman.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>Remarks by the Chairman</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/remarks-consultancy-workshop.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>Remarks at the Consultancy Workshop</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/new-year-remarks-to-staff.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>New Year Remarks to Staff</h3>
+            <span class="doc-meta">PDF &middot; 2 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Remarks & Proceedings" href="documents/notification-letter-governor-uba-sani.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Remarks &amp; Proceedings</span>
+            <h3>Notification Letter to Governor Uba Sani</h3>
+            <span class="doc-meta">PDF &middot; 4 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Books & Manuscripts" href="documents/lizard-shape-model-drug-distribution.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Books &amp; Manuscripts</span>
+            <h3>The Lizard Shape Model in Drug Distribution in Nigeria</h3>
+            <span class="doc-meta">PDF &middot; 70 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Books & Manuscripts" href="documents/lizard-shape-model-second-third-edition.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Books &amp; Manuscripts</span>
+            <h3>The Lizard Shape Model: Second &amp; Third Editions</h3>
+            <span class="doc-meta">PDF &middot; 51 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Books & Manuscripts" href="documents/tribute-book-manuscript.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Books &amp; Manuscripts</span>
+            <h3>A Pillar of Pharmacy Regulation in Nigeria (Full Manuscript)</h3>
+            <span class="doc-meta">PDF &middot; 633 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Books & Manuscripts" href="documents/manual-marketing-pharmaceutical-manufacturing-plant.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Books &amp; Manuscripts</span>
+            <h3>Manual for Marketing in a Pharmaceutical Manufacturing Plant in Nigeria</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Books & Manuscripts" href="documents/pharmaceutical-marketing-manual.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Books &amp; Manuscripts</span>
+            <h3>Pharmaceutical Marketing Manual</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Books & Manuscripts" href="documents/books-authored-and-edited.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Books &amp; Manuscripts</span>
+            <h3>Books Authored, Co-authored and Edited</h3>
+            <span class="doc-meta">PDF &middot; 7 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Bibliography" href="documents/list-of-conferences-seminars-workshops-1988-2025.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Bibliography</span>
+            <h3>List of Conferences, Seminars and Workshop Papers, 1988–2025</h3>
+            <span class="doc-meta">PDF &middot; 27 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Bibliography" href="documents/pharmacy-papers-and-lectures-1988-2025.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Bibliography</span>
+            <h3>Pharmacy Papers and Lectures, 1988–2025</h3>
+            <span class="doc-meta">PDF &middot; 16 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Bibliography" href="documents/topics-of-conferences-and-seminars-presented.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Bibliography</span>
+            <h3>Topics of Conferences and Seminars Presented</h3>
+            <span class="doc-meta">PDF &middot; 22 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Bibliography" href="documents/pharmaceutical-conferences-seminar-topics-overview.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Bibliography</span>
+            <h3>Pharmaceutical Conferences and Seminar Topics: An Overview</h3>
+            <span class="doc-meta">PDF &middot; 2 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Bibliography" href="documents/selected-papers-chronological-edition.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Bibliography</span>
+            <h3>Selected Papers: Chronological Edition</h3>
+            <span class="doc-meta">PDF &middot; 5 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Biography & Profile" href="documents/international-executive-curriculum-vitae.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Biography &amp; Profile</span>
+            <h3>International Executive Curriculum Vitae</h3>
+            <span class="doc-meta">PDF &middot; 10 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Biography & Profile" href="documents/profile-distinguished-pharmacist-academic-regulator.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Biography &amp; Profile</span>
+            <h3>A Distinguished Pharmacist, Academic, Regulator and Public Servant</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Biography & Profile" href="documents/biography-profile-original.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Biography &amp; Profile</span>
+            <h3>Professional Profile and Career Summary</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Biography & Profile" href="documents/refined-introduction-and-zaria-history.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Biography &amp; Profile</span>
+            <h3>Refined Introduction: Zaria, Tudun Wada and the Mora Family</h3>
+            <span class="doc-meta">PDF &middot; 67 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Biography & Profile" href="documents/dr-abdurrahman-mora-distinguished-educationist.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Biography &amp; Profile</span>
+            <h3>Dr. Abdurrahman Mora: A Distinguished Educationist</h3>
+            <span class="doc-meta">PDF &middot; 3 pages</span>
+          </span>
+        </a>
+        <a class="doc-card" data-cat="Biography & Profile" href="documents/the-man-abdurrahman-mora-tribute.pdf" target="_blank" rel="noopener">
+          <svg class="doc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ab7f34" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><text x="12" y="17.5" font-family="Poppins,sans-serif" font-size="5.2" font-weight="600" fill="#ab7f34" stroke="none" text-anchor="middle">PDF</text></svg>
+          <span>
+            <span class="doc-cat">Biography &amp; Profile</span>
+            <h3>The Man: Late Dr. Abdurrahman Mora (1916&ndash;1997)</h3>
+            <span class="doc-meta">PDF &middot; 5 pages</span>
+          </span>
+        </a>
+      </div>
+
+      <p class="doc-note">43 documents in the archive. Papers delivered at over 400 conferences, seminars and workshops are catalogued in the bibliography volumes above.</p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="band" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Gallery</div>
+        <h2>Moments from the work</h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="assets/book-launch-1.jpg" alt="Public presentation of the biography, Kaduna, May 2026"><figcaption>Public presentation of his biography, Kaduna, 13 May 2026</figcaption></figure>
+        <figure><img src="assets/iuo-desk.jpg" alt="In council with the Vice-Chancellor of Igbinedion University"><figcaption>In council with IUO Vice-Chancellor Prof. Lawrence I. Ezemonye</figcaption></figure>
+        <figure><img src="assets/emzor-tour.jpg" alt="Touring a pharmaceutical manufacturing plant with students"><figcaption>Touring Emzor Pharmaceuticals with students</figcaption></figure>
+        <figure><img src="assets/emir-zazzau.jpg" alt="With the Emir of Zazzau"><figcaption>With the Emir of Zazzau, Alhaji Ahmed Nuhu Bamalli</figcaption></figure>
+        <figure><img src="assets/conference-hall.jpg" alt="Speaking at a pharmacy conference"><figcaption>At the 7th Retreat for Council Members, Management, Deans and Directors of Igbinedion University Okada in September, 2025</figcaption></figure>
+        <figure><img src="assets/award-piriga.jpg" alt="Receiving an award of honour"><figcaption>Receiving an Award of Honour, Tudun Wada Zaria.</figcaption></figure>
+        <figure><img src="assets/book-launch-3.jpg" alt="On stage at the book presentation"><figcaption>On stage with royal guests at the book presentation</figcaption></figure>
+        <figure><img src="assets/pans-speaking.jpg" alt="Delivering a lecture at PANS ABU Zaria"><figcaption>Addressing the PANS ABU Zaria symposium held in his honour</figcaption></figure>
+        <figure><img src="assets/fip-montreal-2.jpg" alt="Nigerian delegation at the FIP World Congress, Montreal"><figcaption>Nigerian delegation at the FIP World Congress, Montreal, 2026</figcaption></figure>
+        <figure><img src="assets/fip-airport.jpg" alt="At the FIP World Congress"><figcaption>“Think Health, Think Pharmacy.” The 84th FIP Scientific Conference in Montreal, Canada, brought together global pharmacy professionals to advance innovation, knowledge, and the future of healthcare.</figcaption></figure>
+        <figure><img src="assets/skaggs-colorado.jpg" alt="At the Skaggs School of Pharmacy, University of Colorado Anschutz Medical Campus, Denver"><figcaption>Invited by the Skaggs School of Pharmacy and Pharmaceutical Sciences, University of Colorado Anschutz Medical Campus, Denver, while attending the 2026 NAPPSA Annual Scientific Conference and Exposition.</figcaption></figure>
+        <figure><img src="assets/cake-cutting.jpg" alt="Celebrating a milestone with colleagues"><figcaption>Celebrating with colleagues at ABU Zaria</figcaption></figure>
+        <figure><img src="assets/award-tudunwada.jpg" alt="Receiving recognition from the Tudun Wada Youth Initiative Forum"><figcaption>Honoured by the Tudun Wada Youth Initiative Forum, Zaria</figcaption></figure>
+        <figure><img src="assets/nappsa-emir-representative-denver.jpg" alt="Representing the Emir of Zazzau at the NAPPSA Opening Ceremony, Denver"><figcaption>Representing His Highness, Ambassador Ahmad Nuhu Bamalli, CFR, LLD, the Emir of Zazzau &mdash; Special Guest of Honour &mdash; at the Opening Ceremony of NAPPSA's Annual Scientific Conference and Exposition, Hyatt Regency, Aurora, Denver, Colorado, 18 September 2025</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEGACY ================= -->
+  <section class="band alt" id="legacy">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Family &amp; Legacy</div>
+        <h2>A house on Mora Road</h2>
+      </div>
+      <div class="legacy">
+        <img src="assets/emzor-group.jpg" alt="Professor Mora with colleagues and students">
+        <div>
+          <blockquote>"Education remained central to the Mora family's tradition."</blockquote>
+          <p>
+            His father, the late Dr. Abdurrahman Mora (1916–1997), was among the first four
+            most educated Northern Nigerians of his generation — alongside Sir Abubakar
+            Tafawa Balewa, Mallam Yahaya Gusau and Mallam Bello Kano — and in 1952 became the
+            first Northern Nigerian granted a United States Department of State fellowship.
+            He rose from classroom teacher to Headmaster of Zaria Middle School, then Provincial
+            Education Officer and Adult Education Officer for the whole of the Northern Region,
+            before a diplomatic career that took him to the Nigerian Embassy in Jeddah and, from
+            1967 to 1971, to Islamabad as Nigeria's High Commissioner to Pakistan. He later served
+            as a Federal Permanent Secretary before devoting his final years, until his death in
+            1997, to the Zaria Education Development Association, which he chaired from its
+            founding in 1992.
+          </p>
+          <p>
+            Ten of his children and grandchildren followed him through Barewa College, Zaria,
+            and forty-two through Ahmadu Bello University — among them doctors, pharmacists,
+            lawyers and accountants — a legacy that Professor Mora has carried forward through
+            his own decades of teaching, mentorship, and alumni leadership.
+          </p>
+          <p><a href="documents/the-man-abdurrahman-mora-tribute.pdf" target="_blank" rel="noopener">Read the full tribute, "The Man: Late Dr. Abdurrahman Mora (1916–1997)" &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRESS ================= -->
+  <section class="band" id="press">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Press &amp; Media</div>
+        <h2>In the news</h2>
+      </div>
+      <ul class="press-list">
+        <li>
+          <span class="src">Education Monitor</span>
+          <div>
+            <h4><a href="https://educationmonitornews.com/pans-abu-zaria-to-hold-3rd-annual-symposium-and-lecture-in-honour-of-prof-mora/" target="_blank" rel="noopener">PANS ABU Zaria Holds Annual Symposium and Lecture in Honour of Prof. Mora</a></h4>
+          </div>
+        </li>
+        <li>
+          <span class="src">The Defender</span>
+          <div>
+            <h4><a href="https://thedefenderngr.com/prof-mora-appointed-inaugurated-as-igbinedion-universitys-pro-chancellor/" target="_blank" rel="noopener">Prof Mora Appointed, Inaugurated as Igbinedion University's Pro-Chancellor</a></h4>
+          </div>
+        </li>
+        <li>
+          <span class="src">Education Monitor</span>
+          <div>
+            <h4><a href="https://educationmonitornews.com/bapsosa-ex-abu-alumni-president-prof-mora-speaks-on-power-of-payback-how-old-students-can-transform-their-alma-mater/" target="_blank" rel="noopener">BAPSOSA: Ex-ABU Alumni President Speaks on the Power of Payback</a></h4>
+          </div>
+        </li>
+        <li>
+          <span class="src">NAN Prwire</span>
+          <div>
+            <h4><a href="https://nanprwire.ng/institute-of-human-virology-nigeria-ihvn-inducts-prof-ahmed-tijjani-mora-and-barr-paul-usoro-as-board-members/" target="_blank" rel="noopener">IHVN Inducts Prof. Ahmed Tijjani Mora as a Board Member</a></h4>
+          </div>
+        </li>
+        <li>
+          <span class="src">Education Monitor</span>
+          <div>
+            <h4><a href="https://educationmonitornews.com/ex-abu-alumni-president-prof-mora-to-feature-as-guest-of-honour-at-the-commissioning-ceremony-of-perimeter-fencing-gate-house-of-the-associations-secretariat-31st-may-2025/" target="_blank" rel="noopener">Ex-ABU Alumni President to Feature as Guest of Honour at Secretariat Commissioning</a></h4>
+          </div>
+        </li>
+        <li>
+          <span class="src">Leadership Newspaper</span>
+          <div>
+            <h4>Guest Column: "Muhammadu Buhari: One of Nigeria's Best," 17 July 2025</h4>
+          </div>
+        </li>
+        <li>
+          <span class="src">The Defender</span>
+          <div>
+            <h4><a href="https://thedefenderngr.com/book-with-forward-written-by-sultan-honouring-prof-mora-at-70-debuts-may-13/" target="_blank" rel="noopener">Book With Foreword by the Sultan, Honouring Prof. Mora at 70, Debuts</a></h4>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="img/core-img/logo.png" alt="Enactus Nigeria">
-        <h3>Contact us</h3>
-        <p class="phone">+234 703 689 4919</p>
-        <p>Unit 3, Grace Court Building, Beside Stillwater Garden Estate, Elegushi, Lekki Phase 1, Lagos.</p>
-        <p><a href="mailto:info@enactus.org.ng">info@enactus.org.ng</a></p>
-        <p>Mon – Fri: 9:00 AM – 5:00 PM</p>
-      </div>
-      <div class="footer-col">
-        <h3>Quick links</h3>
-        <ul>
-          <li><a href="nationals.html">National competition</a></li>
-          <li><a href="programs.html">Events &amp; programs</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="teams.html">Teams</a></li>
-          <li><a href="about.html#staff">Staff</a></li>
-          <li><a href="alumni.html">Alumni</a></li>
-          <li><a href="partners.html">Partners</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>About us</h3>
-        <ul>
-          <li><a href="about.html">Who we are</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>Copyright ©<span id="year"></span> All rights reserved | Enactus Nigeria</span>
-      <ul>
-        <li><a href="https://www.facebook.com/enactusng" target="_blank" rel="noopener">Facebook</a></li>
-        <li><a href="https://x.com/EnactusNigeria_" target="_blank" rel="noopener">Twitter</a></li>
-        <li><a href="https://www.instagram.com/enactusnigeria_/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/company/enactus-nig" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://www.youtube.com/@EnactusNigeria" target="_blank" rel="noopener">YouTube</a></li>
-      </ul>
-    </div>
+<footer>
+  <div class="wrap">
+    <div class="display">Professor Ahmed Tijjani Mora</div>
+    <div class="titles">OON · mni · K'ayayen Sarkin Musulmi · Wakilin Maganin Zazzau · Iyan Piriga</div>
+    <div class="rule" style="background:var(--gold-soft);"></div>
+    <p style="max-width:480px;margin:0 auto;font-size:14px;color:rgba(244,236,217,0.75);">
+      Pro-Chancellor and Chairman, Governing Council, Igbinedion University, Okada.
+    </p>
+    <p class="fine">This portfolio was curated in honour of a lifetime devoted to pharmacy, education, and public service.</p>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="assets/js/main.js"></script>
+
+<script>
+(function(){
+  var filters = document.querySelectorAll('.doc-filter');
+  var cards = document.querySelectorAll('.doc-card');
+  filters.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var cat = btn.getAttribute('data-cat');
+      filters.forEach(function(b){ b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      cards.forEach(function(card){
+        var show = (cat === 'all') || (card.getAttribute('data-cat') === cat);
+        card.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
